@@ -47,7 +47,8 @@ Follow these steps to run the project locally:
    ```bash
    git clone https://github.com/nishi719/Responsive-Landing-page-.git
 2. Open index.html in your browser
-   That’s it 🎉! You’re ready to explore the landing page.
+
+That’s it 🎉! You’re ready to explore the landing page.
 
 
 
