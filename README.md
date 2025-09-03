@@ -1,6 +1,6 @@
 # 🌐 Responsive Landing Page  
 
-![Made with HTML](https://img.shields.io/badge/Made%20with-HTML-orange?style=for-the-badge)[Made with CSS](https://img.shields.io/badge/Made%20with-CSS-blue?style=for-the-badge) [Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow?style=for-the-badge)  [Made with Bootstrap](https://img.shields.io/badge/Made%20with-Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)  
+![Made with HTML](https://img.shields.io/badge/Made%20with-HTML-orange?style=for-the-badge)![Made with CSS](https://img.shields.io/badge/Made%20with-CSS-blue?style=for-the-badge) ![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow?style=for-the-badge)  ![Made with Bootstrap](https://img.shields.io/badge/Made%20with-Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)  
 
 A modern and fully **responsive landing page** built using **HTML, CSS, JavaScript, and Bootstrap**, featuring smooth UI, responsiveness, and a professional design.  
 
