@@ -64,7 +64,7 @@ html {
 /* Underline Hover Effect */
 .navbar-nav .nav-link::after {
   content: "";
-  position: absolute;
+  position:relative;
   width: 0;
   height: 2px;
   bottom: -3px;
