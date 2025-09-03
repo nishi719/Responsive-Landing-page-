@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BharatTech Solutions</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top shadow" style="background: linear-gradient(135deg, #1a1a1a, #0d0d0d, #2c2c54);">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3 text-warning" href="#">BharatTech</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#services-stats">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="d-flex align-items-center text-center text-white position-relative">
+  <!-- Desktop Video -->
+  <video autoplay muted loop id="heroVideo" class="d-none d-md-block">
+    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+  </video>
+
+  <!-- Mobile Slideshow -->
+  <div id="heroCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1521790361997-97f7e0f93fa7?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Hero Text -->
+  <div class="container animate__animated animate__fadeInDown hero-content position-absolute top-50 start-50 translate-middle">
+    <h1 class="display-4 fw-bold">Empowering <span class="text-warning">Digital India</span></h1>
+    <p class="lead">BharatTech Solutions brings <span class="fw-bold text-info">innovation</span>, <span class="fw-bold text-success">speed</span>, and <span class="fw-bold text-danger">security</span> for every Indian business.</p>
+    <a href="#features" class="btn btn-warning btn-lg mt-3">Explore Now</a>
+  </div>
+</section>
+
+
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">About Us</h2>
+    <div class="row justify-content-center">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card about-card shadow">
+          <img src="https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress&cs=tinysrgb&w=600" 
+               class="card-img-top about-img" alt="Innovation">
+          <div class="card-body">
+            <h5 class="card-title">Who We Are</h5>
+            <p class="card-text">
+              BharatTech Solutions is a pioneering company focused on digital transformation,AI-driven, and empowering businesses across Bharat.
+            </p>
+            <div class="extra-content collapse">
+              <p>
+                We provide cutting-edge solutions in artificial intelligence, cloud, 
+                cybersecurity, and scalable enterprise systems. Our goal is to strengthen 
+                startups, empower enterprises, and support government initiatives to build 
+                a truly digital Bharat.
+              </p>
+            </div>
+            <button class="btn btn-warning btn-sm learn-more" data-bs-toggle="collapse">Learn More</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card about-card shadow">
+          <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=600" 
+               class="card-img-top about-img" alt="Mission">
+          <div class="card-body">
+            <h5 class="card-title">Our Mission</h5>
+            <p class="card-text">
+              To bridge technology and Bharat’s future by delivering secure, 
+              reliable, and innovative solutions.
+            </p>
+            <div class="extra-content collapse">
+              <p>
+                We aim to accelerate India's digital growth through AI-powered solutions, 
+                blockchain security, IoT innovation, and data-driven strategies. 
+                We believe in making technology accessible for every citizen and business. 
+              </p>
+            </div>
+            <button class="btn btn-warning btn-sm learn-more" data-bs-toggle="collapse">Learn More</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card about-card shadow">
+          <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" 
+               class="card-img-top about-img" alt="Vision">
+          <div class="card-body">
+            <h5 class="card-title">Our Vision</h5>
+            <p class="card-text">
+              To make Bharat a global leader in digital economy by fostering 
+              innovation and inclusivity.
+            </p>
+            <div class="extra-content collapse">
+              <p>
+                Our vision is to empower every business—from startups to government bodies— 
+                with cutting-edge technologies like AI, blockchain, and cloud. 
+                We are committed to driving growth, sustainability, and a digital-first future.
+              </p>
+            </div>
+            <button class="btn btn-warning btn-sm learn-more" data-bs-toggle="collapse">Learn More</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Our Key Features</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card feature-card p-4 shadow-sm h-100 animate__animated animate__zoomIn">
+          <div class="icon mb-3 text-warning fs-1">⚡</div>
+          <h5 class="fw-bold">Fast & Reliable</h5>
+          <p>Optimized for high performance – perfect for India’s growing digital economy.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card feature-card p-4 shadow-sm h-100 animate__animated animate__zoomIn">
+          <div class="icon mb-3 text-success fs-1">🔒</div>
+          <h5 class="fw-bold">Secure</h5>
+          <p>Advanced security solutions for startups, MSMEs, and enterprises across India.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card feature-card p-4 shadow-sm h-100 animate__animated animate__zoomIn">
+          <div class="icon mb-3 text-danger fs-1">🌏</div>
+          <h5 class="fw-bold">Made for Bharat</h5>
+          <p>Localized solutions crafted for India’s diverse market and users.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card feature-card p-4 shadow-sm h-100 animate__animated animate__zoomIn">
+          <div class="icon mb-3 text-primary fs-1">📱</div>
+          <h5 class="fw-bold">Mobile Friendly</h5>
+          <p>Seamless experience across smartphones – because India is mobile-first!</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card feature-card p-4 shadow-sm h-100 animate__animated animate__zoomIn">
+          <div class="icon mb-3 text-info fs-1">💡</div>
+          <h5 class="fw-bold">Innovative</h5>
+          <p>Constantly evolving with AI, ML, and modern web technologies.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card feature-card p-4 shadow-sm h-100 animate__animated animate__zoomIn">
+          <div class="icon mb-3 text-secondary fs-1">🤝</div>
+          <h5 class="fw-bold">Trusted Support</h5>
+          <p>Dedicated Indian customer support available 24x7 for your needs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services & Stats Section -->
+<section id="services-stats" class="py-5 bg-gradient ">
+  <div class="container text-center">
+    <!-- Services -->
+    <h2 class="fw-bold mb-5">Our Services</h2>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card service-card p-4 shadow-lg h-100">
+          <h5 class="fw-bold text-warning">Web Development</h5>
+          <p>Custom websites, portals, and applications crafted for performance and design.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card service-card p-4 shadow-lg h-100">
+          <h5 class="fw-bold text-warning">AI & Analytics</h5>
+          <p>Smart AI-driven solutions for data insights, automation, and growth.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card service-card p-4 shadow-lg h-100">
+          <h5 class="fw-bold text-warning">Cloud & Security</h5>
+          <p>Enterprise-grade cloud hosting with best-in-class security measures.</p>
+        </div>
+      </div>
+    </div>
+
+
+   <!-- Stats Section -->
+<section id="stats" class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <div class="row g-4">
+      <div class="col-md-3">
+        <h3 class="counter text-warning fw-bold display-5" data-target="500">0+</h3>
+        <p class="fw-semibold text-light">Projects Delivered</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="counter text-success fw-bold display-5" data-target="300">0+</h3>
+        <p class="fw-semibold text-light">Satisfied Clients</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="counter text-danger fw-bold display-5" data-target="50">0+</h3>
+        <p class="fw-semibold text-light">Team Members</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="counter text-primary fw-bold display-5" data-target="10">0+</h3>
+        <p class="fw-semibold text-light">Years of Experience</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Voices from India </h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- 1 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Aditi Sharma">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <p class="mt-2">"BharatTech helped our startup scale with speed. Proud to support Make in India!"</p>
+            <h6 class="fw-bold text-warning">- Aditi Sharma, Delhi</h6>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Ramesh Kumar">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <p class="mt-2">"Reliable and secure services. Perfect for growing businesses in India."</p>
+            <h6 class="fw-bold text-success">- Ramesh Kumar, Bengaluru</h6>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Priya Nair">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <p class="mt-2">"Loved the modern design and smooth experience. Truly world-class!"</p>
+            <h6 class="fw-bold text-danger">- Priya Nair, Mumbai</h6>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/men/14.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Arjun Verma">
+            <div class="stars" aria-label="4 out of 5">★★★★☆</div>
+            <p class="mt-2">"Affordable and user-friendly solutions. Perfect for small businesses."</p>
+            <h6 class="fw-bold text-primary">- Arjun Verma, Jaipur</h6>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/women/30.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Sneha Iyer">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <p class="mt-2">"Their support team is amazing! Quick response and always helpful."</p>
+            <h6 class="fw-bold text-secondary">- Sneha Iyer, Chennai</h6>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/men/28.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Vikram Patel">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <p class="mt-2">"From design to performance, BharatTech exceeded expectations!"</p>
+            <h6 class="fw-bold text-info">- Vikram Patel, Ahmedabad</h6>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/men/55.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Rahul Mehta">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <p class="mt-2">"A true partner for digital transformation. Highly recommended!"</p>
+            <h6 class="fw-bold text-warning">- Rahul Mehta, Pune</h6>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/women/22.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Kavita Singh">
+            <div class="stars" aria-label="4.5 out of 5">★★★★☆</div>
+            <p class="mt-2">"Their AI & Analytics services gave us deep insights into our business."</p>
+            <h6 class="fw-bold text-success">- Kavita Singh, Hyderabad</h6>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/men/77.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Suresh Yadav">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <p class="mt-2">"Cloud hosting is smooth, reliable, and cost-effective. Excellent work."</p>
+            <h6 class="fw-bold text-danger">- Suresh Yadav, Lucknow</h6>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Meera Joshi">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <p class="mt-2">"Top-notch support and world-class digital services. Truly Bharat-first!"</p>
+            <h6 class="fw-bold text-primary">- Meera Joshi, Kolkata</h6>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/men/5.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Farhan Ali">
+            <div class="stars" aria-label="4 out of 5">★★★★☆</div>
+            <p class="mt-2">"Great UI/UX and fast delivery. Our customers love the new portal."</p>
+            <h6 class="fw-bold text-info">- Farhan Ali, Noida</h6>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="swiper-slide">
+          <div class="card testimonial-card p-4 shadow-sm h-100">
+            <img src="https://randomuser.me/api/portraits/women/72.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Ananya Gupta">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <p class="mt-2">"Seamless mobile app with excellent performance. Fantastic team!"</p>
+            <h6 class="fw-bold text-secondary">- Ananya Gupta, Indore</h6>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination & Arrows -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Floating Chatbot -->
+<div id="chatbot">
+  <div id="chatbot-toggle">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712144.png" alt="robot" width="40">
+  </div>
+
+  <div id="chatbot-box" class="d-none">
+    <div id="chatbot-header">
+      <span>🤖 BharatBot</span>
+      <span id="chatbot-close">&times;</span>
+    </div>
+    <div id="chatbot-messages">
+      <div class="bot-message">Hello! I am BharatBot. How can I help you today?</div>
+    </div>
+    <div id="chatbot-input">
+      <input type="text" id="userMessage" placeholder="Type your message..." />
+      <button id="sendMessage">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold text-center mb-5">Get in Touch</h2>
+    <p class="mb-5">Interested to know more? Fill the form, or reach us directly through our contact details below.</p>
+    <div class="row g-4 mb-5">
+  <!-- Phone -->
+  <div class="col-md-3">
+    <div class="contact-card text-center p-4 shadow-lg h-100">
+      <div class="icon-box bg-warning text-white mx-auto mb-3">
+        <i class="bi bi-telephone-fill fs-3"></i>
+      </div>
+      <h5 class="fw-bold">Call Us</h5>
+      <p class="text-muted">+91 98765 43210</p>
+      <a href="tel:+919876543210" class="btn btn-outline-warning btn-sm">Call Now</a>
+    </div>
+  </div>
+
+  <!-- Email -->
+  <div class="col-md-3">
+    <div class="contact-card text-center p-4 shadow-lg h-100">
+      <div class="icon-box bg-primary text-white mx-auto mb-3">
+        <i class="bi bi-envelope-fill fs-3"></i>
+      </div>
+      <h5 class="fw-bold">Email</h5>
+      <p class="text-muted">info@example.com</p>
+      <a href="mailto:info@example.com" class="btn btn-outline-primary btn-sm">Send Email</a>
+    </div>
+  </div>
+
+  <!-- WhatsApp -->
+  <div class="col-md-3">
+    <div class="contact-card text-center p-4 shadow-lg h-100">
+      <div class="icon-box bg-success text-white mx-auto mb-3">
+        <i class="bi bi-whatsapp fs-3"></i>
+      </div>
+      <h5 class="fw-bold">WhatsApp</h5>
+      <p class="text-muted">+91 98765 43210</p>
+      <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline-success btn-sm">Chat Now</a>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="col-md-3">
+    <div class="contact-card text-center p-4 shadow-lg h-100">
+      <div class="icon-box bg-danger text-white mx-auto mb-3">
+        <i class="bi bi-geo-alt-fill fs-3"></i>
+      </div>
+      <h5 class="fw-bold">Visit Us</h5>
+      <p class="text-muted">123 Street, New Delhi, India</p>
+      <a href="https://goo.gl/maps/xyz" target="_blank" class="btn btn-outline-danger btn-sm">View Map</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Form -->
+<div class="row justify-content-center mt-5">
+  <div class="col-md-8">
+    <form id="contactForm" class="p-4 shadow bg-white rounded needs-validation" novalidate>
+      <!-- Name -->
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        <label for="name"><i class="bi bi-person-fill me-2 text-warning"></i>Your Name</label>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+        <label for="email"><i class="bi bi-envelope-fill me-2 text-warning"></i>Your Email</label>
+        <div class="invalid-feedback">Please enter a valid email.</div>
+      </div>
+
+      <!-- WhatsApp (New field) -->
+      <div class="form-floating mb-3">
+        <input type="tel" class="form-control" id="whatsapp" placeholder="WhatsApp Number" pattern="[0-9]{10}">
+        <label for="whatsapp"><i class="bi bi-whatsapp me-2 text-success"></i>WhatsApp Number</label>
+        <div class="invalid-feedback">Enter a valid 10-digit number.</div>
+      </div>
+
+      <!-- Message -->
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Your Message" id="message" style="height: 150px;" required></textarea>
+        <label for="message"><i class="bi bi-chat-dots-fill me-2 text-warning"></i>Your Message</label>
+        <div class="invalid-feedback">Please write a message.</div>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="newsletter">
+        <label class="form-check-label" for="newsletter">
+          Subscribe to our newsletter
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-warning w-100 btn-lg">
+        <i class="bi bi-send-fill me-2"></i> Send Message
+      </button>
+    </form>
+
+    <!-- Success Alert -->
+    <div id="successAlert" class="alert alert-success mt-3 d-none" role="alert">
+      ✅ Thank you! Your message has been sent successfully. We will
+    </div>
+  </div>
+</div>
+
+    <!-- Google Map Section -->
+    <div class="mt-5">
+    <h4 class="fw-bold mb-4 text-center">📍 Our Location</h4>
+    <div class="row align-items-center g-4">
+        
+        <!-- Address Info -->
+        <div class="col-md-4">
+        <div class="p-4 rounded shadow bg-light h-100">
+            <h5 class="fw-bold mb-3">Visit Us</h5>
+
+            <p><i class="bi bi-clock-fill text-warning me-2"></i> Mon - Sat: 9 AM - 7 PM</p>
+        </div>
+        </div>
+
+        <!-- Map -->
+        <div class="col-md-8">
+        <div class="map-container rounded shadow overflow-hidden">
+            <iframe class="w-100 h-100" height="300" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0864977170317!2d77.21672131566863!3d28.644800082412754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd12eaf1d53f%3A0x64cbf3a94bb5be2a!2sNew%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1631634740486!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        </div>
+        
+    </div>
+    </div>
+
+   <!-- Social Media -->
+<div class="mt-4">
+  <a href="#" class="fs-3 me-3" style="color:#1877F2;"><i class="bi bi-facebook"></i></a> <!-- Facebook Blue -->
+  <a href="#" class="fs-3 me-3" style="color:#1DA1F2;"><i class="bi bi-twitter"></i></a> <!-- Twitter Blue -->
+  <a href="#" class="fs-3 me-3" style="color:#0077B5;"><i class="bi bi-linkedin"></i></a> <!-- LinkedIn Blue -->
+  <a href="#" class="fs-3" style="color:#E4405F;"><i class="bi bi-instagram"></i></a> <!-- Instagram Gradient -->
+</div>
+
+  </div>
+</section>
+
+<footer class="py-5 text-white text-center" 
+        style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+  <div class="container">
+    <h4 class="fw-bold mb-3">🌏 BharatTech Solutions</h4>
+    <p class="mb-3">Innovating for a Better Tomorrow 🚀</p>
+
+    <!-- Social Icons -->
+    <div class="mb-3">
+      <a href="#" class="me-3" target="_blank">
+        <i class="fab fa-facebook-f fa-2x" style="color:#3c68af;"></i>
+      </a>
+      <a href="#" class="me-3" target="_blank">
+        <i class="fab fa-twitter fa-2x" style="color:#241230;"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fab fa-linkedin-in fa-2x" style="color:#1500b5;"></i>
+      </a>
+    </div>
+
+    <hr class="bg-light">
+
+    <p class="mb-0">© 2025 BharatTech Solutions | Designed & Developed by ❤️
+      <span class="fw-bold text-warning">Nishi Kumari</span>
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="btn btn-warning">⬆</button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
