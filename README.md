@@ -33,9 +33,9 @@ A modern and fully **responsive landing page** built using **HTML, CSS, JavaScri
 
 ## 📂 Project Structure
 
-├── index.html        # Main landing page
-├── style.css         # Styling (neumorphism + responsiveness)
-├── script.js         # Interactivity (chatbot, slideshow, back-to-top)
+- 📄 `index.html` → Main landing page, Bootstrap features
+- 🎨 `style.css` → Styling (neumorphism + responsiveness) 
+- ⚙️ `script.js` → Interactivity (chatbot, slideshow, back-to-top) 
 
 ---
 
